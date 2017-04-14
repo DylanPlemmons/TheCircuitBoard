@@ -158,7 +158,6 @@ input[type="text"]#search-box::-webkit-input-placeholder {
 #twitter:hover {
     color: #4099FF;
 }
-
 #instagram {
     transition: color .3s ease-in-out;
 }
@@ -194,7 +193,7 @@ input[type="text"]#search-box::-webkit-input-placeholder {
 #logo {
     text-align: center;
     background: url(/images/Logo.png) no-repeat center center;
-    width: 1000px;
+    width: 1200px;
     height: 150px;
     width: 50%;
     margin: 0 auto;
