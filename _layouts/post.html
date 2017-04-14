@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>{{ page.title }}</title>
+    <title>{{ page.head }}</title>
     <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto|Vollkorn|Rubik|PT Sans|Oswald" rel="stylesheet">
     <link rel="stylesheet" href="/posts/post.css" id="style1">
@@ -11,12 +11,8 @@
     <script src="/assets/js/jquery.backtotoplink.min.js"></script>
 </head>
 
-<body class="fade-out" id="body">
+<body id="body">
     <script>
-        document.body.className += ' fade-out';
-        $(function () {
-            $('body').removeClass('fade-out');
-        });
         $.backToTopLink({
     			scrollDelay: '1000',
                 navigatorPadding: 1,
@@ -35,15 +31,11 @@
               <input type="text" id="search-box" name="query" placeholder="Search" rows="1"></input>
               <button type="submit" id="search"><i class="fa fa-search fa-lg" aria-hidden="true"></i></button>
             </form>
-            <input type="button" class="changeBg" onclick="day();" value="Day" />
-            <input type="button" class="changeBg" onclick="night();" value="Night" />
-            <a href="https://twitter.com" target="_blank"><i class="fa fa-twitter fa-lg" id="twitter"></i></a>
+            <a href="https://twitter.com/CircuitBoardNet" target="_blank"><i class="fa fa-twitter fa-lg" id="twitter"></i></a>
             <a href="https://instagram.com" target="_blank"><i class="fa fa-instagram fa-lg" id="instagram"></i></a>
             <a href="https://plus.google.com" target="_blank"><i class="fa fa-google-plus fa-lg" id="g-plus"></i></a>
         </div>
     </div>
-    <!-- Trending -->
-    {% include trending.html %}
     <div class="wrapper">
     <h1>{{ page.head }}</h1>
     <div class="postmeta">
