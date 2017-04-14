@@ -1,0 +1,37 @@
+---
+layout: headfoot
+title: Home
+---
+<!-- WIP: NAME/Favicon, Sharing(RSS and Atom) 
+	Bug Bounty: Images and Text (Delete on launch until finished)
+	Donate Page: Text and Donate Form (Delete on launch until finished)
+	Dark/Light Mode: Same on all pages and use icon button (Delete on launch until figured out)
+	Catergories: Setting Posts in Catergories/Keywords
+	About Page: Roadmap, Text and Images (Delete on launch until finished)
+	Mobile Compatible
+	Ads... but not too mean on mobile or desktop
+ -->
+ 	<div id="logo"></div>
+	<div class="wrapper">
+		{% for post in site.posts %}
+		<article class="post">
+			<!-- Title and Post Meta -->
+			<h1><a href="{{ post.url }}">{{ post.head }}</a></h1>
+			<div class="postmeta">
+				<i class="fa fa-calendar"></i>
+				<span class="date">{{ post.date | date: '%B %d, %Y'}}</span>
+				<i class="fa fa-user-o"></i>
+				<span class="author">Dylan Plemmons</span>
+			</div>
+			
+			<!-- Post Image and Descritption -->
+			<a href="{{ post.url }}"><img src="{{ post.image }}" alt="{{ post.imagealt }}" width="256px" height="135px"></a>
+			<div class="postinfo">
+				<span>
+					{{ post.meta }}
+				</span> <br> <br>
+				<span class="hvr-icon-forward"><a href="{{ post.url }}" class="rdmore">Read More</a></span>
+			</div>
+		</article>
+		{% endfor %}
+	</div>

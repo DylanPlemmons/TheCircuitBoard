@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: #222;
+}
+
+.topnav {
+    background-color: #222;
+    overflow: hidden;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 99999;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Helvetica Neue, sans-serif;
+    font-weight: bold;
+}
+
+#home {
+    margin-left: 20px;
+}
+
+.hvr-underline-reveal {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.hvr-underline-reveal:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #f2f2f2;
+  height: 4px;
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-reveal:hover:before, .hvr-underline-reveal:focus:before, .hvr-underline-reveal:active:before {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+
+#section1, #rules, #FAQ {
+    height: 500px;
+}
+
+#section1 h1 {
+    color: #f2f2f2;
+    text-align: center;
+    font-family: 'Rubik';
+    font-size: 36px;
+    margin-top: 5%;
+}
+
+#info {
+    color: #f2f2f2;
+    font-family: 'Rubik';
+    float: right;
+    width: 500px;
+    margin-right: 20%;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+#info a {
+    color: red;
+    text-decoration: none;
+}
+
+#HOF, #bounty {
+    background: #111;
+    height: 500px;
+}
+
+#HOF h1, #rules h1, #bounty h1, #FAQ h1 {
+    color: #f2f2f2;
+    text-align: center;
+    font-family: 'Rubik';
+    font-size: 36px;
+    padding-top: 25px;
+}

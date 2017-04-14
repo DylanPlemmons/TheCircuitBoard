@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html id="html">
+
+<head>
+    <meta charset="utf-8">
+    <title>New Article</title>
+    <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto|Vollkorn|Rubik|PT Sans|Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="/posts/post.css" id="style1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="/assets/js/jquery.backtotoplink.min.js"></script>
+</head>
+
+<body class="fade-out" id="body">
+    <script>
+        document.body.className += ' fade-out';
+        $(function () {
+            $('body').removeClass('fade-out');
+        });
+        $.backToTopLink({
+    			scrollDelay: '1000',
+                navigatorPadding: 1,
+                arrowWidth: 11
+    	});
+    </script>
+    <!-- Navbar -->
+    <div class="topnav" id="myTopnav">
+        <a href="/index.html" id="home" class="hvr-underline-from-center">HOME</a>
+        <a href="#" class="hvr-underline-from-center">TECH</a>
+        <a href="#" class="hvr-underline-from-center">GAMES</a>
+        <a href="#" class="hvr-underline-from-center">SECURITY</a>
+        <a href="#" class="hvr-underline-from-center">ABOUT</a>
+        <div class="icons">
+            <form action="/search.html" method="get" id="searching">
+              <input type="text" id="search-box" name="query" placeholder="Search" rows="1"></input>
+              <button type="submit" id="search"><i class="fa fa-search fa-lg" aria-hidden="true"></i></button>
+            </form>
+            <input type="button" class="changeBg" onclick="day();" value="Day" />
+            <input type="button" class="changeBg" onclick="night();" value="Night" />
+            <a href="https://twitter.com" target="_blank"><i class="fa fa-twitter fa-lg" id="twitter"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fa fa-instagram fa-lg" id="instagram"></i></a>
+            <a href="https://plus.google.com" target="_blank"><i class="fa fa-google-plus fa-lg" id="g-plus"></i></a>
+        </div>
+    </div>
+    <!-- Trending -->
+    <div class="sidebar" style="float: right;">
+	<div class="trending">
+		<span id="ttitle">TRENDING</span>
+		<hr class="sexy_line" />
+		<!-- Posts in Sidebar -->
+		
+		<div class="tpost">
+			<a href="/2017/04/05/new-article.html"><h2>This is the first test post</h2>
+			<img src="/images/microsoft-patch-tuesday.png" alt="Microsoft Patch Tuesday" width="128px" height="67px"></a>
+		</div>
+		
+		<div class="tpost">
+			<a href="/2017/04/05/Test.html"><h2>This is the second test post</h2>
+			<img src="/images/android-malware-apps.png" alt="Android Malware Apps" width="128px" height="67px"></a>
+		</div>
+		
+		<div class="tpost">
+			<a href="/2017/04/04/test.html"><h2>This is the third test post</h2>
+			<img src="/images/hack-whatsapp-telegram-account.png" alt="Whatsapp and Telegram Account Hack" width="128px" height="67px"></a>
+		</div>
+		
+	</div>
+</div>
+    <div class="wrapper">
+    <h1>This is the first test post</h1>
+    <div class="postmeta">
+        <i class="fa fa-calendar"></i>
+        <span class="date">April 05, 2017</span>
+        <i class="fa fa-user-o"></i>
+        <span class="author">Dylan Plemmons</span>
+        <i class="fa fa-clock-o time"></i>
+        <span>
+            
+			
+			5 minute
+			 read
+        </span>
+    </div>
+    <img src="/images/microsoft-patch-tuesday.png" alt="" id="postimg">
+    <div class="post">
+      <span>Bought a brand new Android Smartphone? Do not expect it to be a clean slate. <br> <br>
+At least 36 high-end smartphone models belonging to popular manufacturing companies such as Samsung, LG, Xiaomi, Asus, Nexus, Oppo, and Lenovo, which are being distributed by two unidentified companies have been found pre-loaded with malware programs. <br> <br>
+These malware infected devices were identified after a Check Point malware scan was performed on Android devices. Two malware families were detected on the infected devices: Loki and SLocker. <br> <br>
+According to a blog post published Friday by Check Point researchers, these malicious software apps were not part of the official ROM firmware supplied by the smartphone manufacturers but were installed later somewhere along the supply chain, before the handsets arrived at the two companies from the manufacturer's factory. <br> <br>
+First seen in February 2016, <b>Loki Trojan</b> inject devices right inside core Android operating system processes to gain powerful root privileges. The trojan also includes spyware-like features, such as grabbing the list of current applications, browser history, contact list, call history, and location data. <br> <br>
+On the other hand, SLocker is a mobile ransomware that locks victims devices for ransom and communicates through Tor in order to hide the identity of its operators.<br> <br>
+<h2>List of Popular Smartphones Infected with Malware</h2><br>
+Here's the list of infected smartphones:<br> <br>
+<ul class="list">
+<li>Galaxy Note 2</li>
+<li>LG G4</li>
+<li>Galaxy S7</li>
+<li>Galaxy S4</li>
+<li>Galaxy Note 4</li>
+<li>Galaxy Note 5</li>
+<li>Xiaomi Mi 4i</li>
+<li>Galaxy A5</li>
+<li>ZTE x500</li>
+<li>Galaxy Note 3</li>
+<li>Galaxy Note Edge</li>
+<li>Galaxy Tab S2</li>
+<li>Galaxy Tab 2</li>
+<li>Oppo N3</li>
+<li>Vivo X6 plus</li>
+<li>Nexus 5</li>
+<li>Nexus 5X</li>
+<li>Asus Zenfone 2</li>
+<li>LenovoS90</li>
+<li>OppoR7 plus</li>
+<li>Xiaomi Redmi</li>
+<li>Lenovo A850</li>
+</ul> <br>
+The malware backdoor offers its operator unrestricted access to these infected devices, from downloading, installing and activating Android malicious apps, deleting user data, uninstalling security software and disabling system apps, to dialing premium phone numbers. <br><br>
+This incident underscores the dangers of untrusted supply chains, and experts are quite worried about the security of the supply chain with reports of over 20 incidents where rogue retailers have managed to pre-install malware on new Android handsets. <br> <br>
+<h2>Here's How to Remove the Malware Infections:</h2> <br>
+Since the malware programs were installed to the device's ROM using system privileges, it's hard to get rid of the infections. <br> <br>
+To remove the malware from the infected devices, either you can root your device and uninstall the malware apps easily, or you would need to completely reinstall the phone firmware/ROM via a process called "Flashing." <br><br>
+Flashing is a complex process, and it is recommended that users power off their device and approach a certified technician/mobile service provider.<br><br>
+It's not the first time when high-end smartphones have been shipped pre-installed with malicious apps that can covertly siphon sensitive user data.<br><br>
+In December last year, certain low-cost Android smartphones and tablets were found to be shipped with malicious firmware that covertly gathered data about the infected devices, displays ads on top of running apps and downloads unwanted APKs on the victim's devices. <br><br>
+In November, researchers discovered a hidden backdoor in the AdUps firmware of over 700 Million Android smartphones, which also covertly gathered data on phone owners and sent it to a Chinese server without the user's knowledge. <br><br>
+Meanwhile, a flaw in the Ragentek firmware used by certain low-cost Android devices was also discovered that allowed attackers to remotely execute malicious code with root privileges, turning over full control of the devices to hackers.</span>
+
+
+    </div>
+      </div>
+    <!-- Footer -->
+    <footer id="footer">
+        &copy;The Circuit Board 2017
+    </footer>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Footer Ad -->
+    <ins class="adsbygoogle"
+        style="display:inline-block;width:728px;height:90px"
+        data-ad-client="ca-pub-3344309615358514"
+        data-ad-slot="2191937986">
+    </ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</body>
+
+</html>

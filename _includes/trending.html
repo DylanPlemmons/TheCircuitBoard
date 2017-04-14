@@ -1,0 +1,13 @@
+<div class="sidebar" style="float: right;">
+	<div class="trending">
+		<span id="ttitle">TRENDING</span>
+		<hr class="sexy_line" />
+		<!-- Posts in Sidebar -->
+		{% for post in site.posts %}
+		<div class="tpost">
+			<a href="{{ post.url }}"><h2>{{ post.head }}</h2>
+			<img src="{{ post.image }}" alt="{{ post.imagealt }}" width="128px" height="67px"></a>
+		</div>
+		{% endfor %}
+	</div>
+</div>

@@ -1,0 +1,30 @@
+---
+layout: headfoot
+title: Technology
+---
+{% include trending.html %}
+<div class="wrapper">
+	{% if page.tech %}
+	{% for post in site.posts %}
+	<article class="post">
+		<!-- Title and Post Meta -->
+		<h1><a href="{{ post.url }}">{{ post.head }}</a></h1>
+		<div class="postmeta">
+			<i class="fa fa-calendar"></i>
+			<span class="date">{{ post.date | date: '%B %d, %Y'}}</span>
+			<i class="fa fa-user-o"></i>
+			<span class="author">Dylan Plemmons</span>
+		</div>
+			
+		<!-- Post Image and Descritption -->
+		<a href="{{ post.url }}"><img src="{{ post.image }}" alt="{{ post.imagealt }}" width="256px" height="135px"></a>
+		<div class="postinfo">
+			<span>
+				{{ post.meta }}
+			</span> <br> <br>
+			<span class="hvr-icon-forward"><a href="{{ post.url }}" class="rdmore">Read More</a></span>
+		</div>
+	</article>
+	{% endfor %}
+	{% endif %}
+</div>
