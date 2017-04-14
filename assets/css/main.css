@@ -97,8 +97,7 @@ body.fade-out {
     position: absolute;
     z-index: -1;
     left: 50%;
-    right: 50%;
-    bottom: 0;
+    right: 50%;    bottom: 0;
     background: #f2f2f2;
     height: 4px;
     -webkit-transition-property: left, right;
@@ -108,7 +107,6 @@ body.fade-out {
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
 }
-
 .hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
     left: 0;
     right: 0;
@@ -119,8 +117,7 @@ body.fade-out {
 }
 
 #search-box {
-    border-radius: 36px;
-    border: none;
+    border-radius: 36px;    border: none;
     outline: 0;
     height: 20px;
     margin-bottom: 20px;
@@ -130,7 +127,6 @@ input[type="text"]#search-box::-webkit-input-placeholder {
     padding-left: 1px;
     font-family: Tahoma;
 }
-
 0input[type="text"]#search-box {
     padding-left: 10px;
     font-family: Tahoma;
@@ -142,10 +138,8 @@ input[type="text"]#search-box::-webkit-input-placeholder {
     color: #fff;
     transition: color .3s ease-in-out;
 1}
-
 #search:active, #search:focus, #search-box:active, #search-box:focus {
-    border: none;
-    outline: 0;
+    border: none;    outline: 0;
 }
 
 #search:hover {
@@ -154,9 +148,7 @@ input[type="text"]#search-box::-webkit-input-placeholder {
 #twitter {
     transition: color .3s ease-in-out;
 }
-
-#twitter:hover {
-    color: #4099FF;
+#twitter:hover {    color: #4099FF;
 }
 #instagram {
     transition: color .3s ease-in-out;
@@ -165,7 +157,6 @@ input[type="text"]#search-box::-webkit-input-placeholder {
 #instagram:hover {
     color: #cd486b;
 }
-
 #g-plus {
     transition: color .3s ease-in-out;
 }
@@ -192,12 +183,14 @@ input[type="text"]#search-box::-webkit-input-placeholder {
 
 #logo {
     text-align: center;
-    background: url(/images/Logo.png) no-repeat center center;
-    width: 100%;
+    background: url(/images/Logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
     height: 150px;
     width: 50%;
     margin: 0 auto;
     margin-top: 50px;
+    transform: scale(1.37);
 }
 
 /* Articles */
