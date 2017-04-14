@@ -131,7 +131,7 @@ input[type="text"]#search-box::-webkit-input-placeholder {
     font-family: Tahoma;
 }
 
-input[type="text"]#search-box {
+0input[type="text"]#search-box {
     padding-left: 10px;
     font-family: Tahoma;
 }
@@ -141,7 +141,7 @@ input[type="text"]#search-box {
     border: none;
     color: #fff;
     transition: color .3s ease-in-out;
-}
+1}
 
 #search:active, #search:focus, #search-box:active, #search-box:focus {
     border: none;
@@ -151,7 +151,6 @@ input[type="text"]#search-box {
 #search:hover {
     color: #c9c9c9;
 }
-
 #twitter {
     transition: color .3s ease-in-out;
 }
@@ -195,7 +194,7 @@ input[type="text"]#search-box {
 #logo {
     text-align: center;
     background: url(/images/Logo.png) no-repeat center center;
-    width: 800px;
+    width: 1000px;
     height: 150px;
     width: 50%;
     margin: 0 auto;
