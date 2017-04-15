@@ -183,14 +183,11 @@ input[type="text"]#search-box::-webkit-input-placeholder {
 
 #logo {
     text-align: center;
-    background: url(/images/Logo.png);
-    background-repeat: no-repeat;
-    background-size: contain;
+    background: url(/images/Logo.png) no-repeat center center;
     height: 150px;
     width: 50%;
     margin: 0 auto;
     margin-top: 50px;
-    transform: scale(1.37);
 }
 
 /* Articles */
