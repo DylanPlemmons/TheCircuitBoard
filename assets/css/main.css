@@ -97,7 +97,8 @@ body.fade-out {
     position: absolute;
     z-index: -1;
     left: 50%;
-    right: 50%;    bottom: 0;
+    right: 50%;
+    bottom: 0;
     background: #f2f2f2;
     height: 4px;
     -webkit-transition-property: left, right;
@@ -107,6 +108,7 @@ body.fade-out {
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
 }
+
 .hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
     left: 0;
     right: 0;
@@ -117,7 +119,8 @@ body.fade-out {
 }
 
 #search-box {
-    border-radius: 36px;    border: none;
+    border-radius: 36px;
+    border: none;
     outline: 0;
     height: 20px;
     margin-bottom: 20px;
@@ -127,7 +130,8 @@ input[type="text"]#search-box::-webkit-input-placeholder {
     padding-left: 1px;
     font-family: Tahoma;
 }
-0input[type="text"]#search-box {
+
+input[type="text"]#search-box {
     padding-left: 10px;
     font-family: Tahoma;
 }
@@ -137,19 +141,25 @@ input[type="text"]#search-box::-webkit-input-placeholder {
     border: none;
     color: #fff;
     transition: color .3s ease-in-out;
-1}
+}
+
 #search:active, #search:focus, #search-box:active, #search-box:focus {
-    border: none;    outline: 0;
+    border: none;
+    outline: 0;
 }
 
 #search:hover {
     color: #c9c9c9;
 }
+
 #twitter {
     transition: color .3s ease-in-out;
 }
-#twitter:hover {    color: #4099FF;
+
+#twitter:hover {
+    color: #4099FF;
 }
+
 #instagram {
     transition: color .3s ease-in-out;
 }
@@ -157,6 +167,7 @@ input[type="text"]#search-box::-webkit-input-placeholder {
 #instagram:hover {
     color: #cd486b;
 }
+
 #g-plus {
     transition: color .3s ease-in-out;
 }
@@ -470,6 +481,41 @@ input:-moz-placeholder {
     margin-top: 5px;
     margin-bottom: 20px;
     align-items: center
+}
+
+/* Feedback */
+
+#feedback h1 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 5%;
+}
+
+#feedback button {
+    border-radius: 5px;
+    background-color: #cb4e4e;
+    box-shadow: 0 6px #ab3c3c;
+    border: none;
+    margin: auto;
+    display: block;
+    margin-top: 40px;
+}
+
+#feedback a {
+    font-family: 'Rubik', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+#feedback p {
+    font-family: Tahoma;
+    text-align: center;
+    margin-top: 40px;
 }
 
 /* Footer */
