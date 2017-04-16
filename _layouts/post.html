@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto|Vollkorn|Rubik|PT+Sans|Oswald" rel="stylesheet">
     <link rel="stylesheet" href="/posts/post.css" id="style1">
+    <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=58f3a0c932576e001193b08b&product=inline-share-buttons"></script>
     <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=58f3a0c932576e001193b08b&product=custom-share-buttons"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="/assets/js/jquery.backtotoplink.min.js"></script>
@@ -61,11 +62,7 @@
 			{% endif %} read
         </span>
     </div>
-    <div class="share">
-        <button id="twitterb" data-network="twitter"><i class="fa fa-twitter"></i> Tweet</button>
-        <button id="facebookb" data-network="facebook"><i class="fa fa-facebook"></i> Share</button>
-        <button id="g-plusb" data-network="googleplus"><i class="fa fa-google-plus"></i> Share</button>
-    </div>
+    <div class="sharethis-inline-share-buttons"></div>
     <img src="{{ page.image }}" alt="{{ post.imagealt }}" id="postimg">
     <div class="post">
       {{ content }}
