@@ -1,0 +1,14 @@
+---
+layout: post
+date: 2017-05-06
+head: Rewritten
+author: Dylan Plemmons
+image: /images/Rewritten.png
+imagealt: Rewritten
+meta: The Circuit Board is going to be rewritten in ruby on rails!
+---
+<span>
+This is great news for me and you! Rewritting the site in Ruby on Rails it will allow articles to be written from the website and not have to write them in the server in HTML. <br><br>
+This change will also add the feature of logins and comments! The logins will not have much of an impact but to only comment on articles until later use. Also, comments won't be the best when first released but, I will keep perfecting it and later add an anchor URL to the comments to allow the users to share their comments.<br><br>
+There is no estimated time of when this will be introduced because I'm still learning Ruby on Rails and will need to plan and write everything out. So it must likely will take over 1-2 months. Thanks for reading and hope you're as excited as I am to introduce this.
+</span>
