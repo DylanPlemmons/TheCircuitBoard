@@ -57,10 +57,9 @@ body.fade-out {
   margin-left: 50px;
 }
 
+/* Underline Reveal */
 
-/* Underline From Center */
-
-.hvr-underline-from-center {
+.hvr-underline-reveal {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -69,29 +68,27 @@ body.fade-out {
   position: relative;
   overflow: hidden;
 }
-
-.hvr-underline-from-center:before {
+.hvr-underline-reveal:before {
   content: "";
   position: absolute;
   z-index: -1;
-  left: 50%;
-  right: 50%;
+  left: 0;
+  right: 0;
   bottom: 0;
   background: #f2f2f2;
   height: 4px;
-  -webkit-transition-property: left, right;
-  transition-property: left, right;
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  -webkit-transition-property: transform;
+  transition-property: transform;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-
-.hvr-underline-from-center:hover:before,
-.hvr-underline-from-center:focus:before,
-.hvr-underline-from-center:active:before {
-  left: 0;
-  right: 0;
+.hvr-underline-reveal:hover:before, .hvr-underline-reveal:focus:before, .hvr-underline-reveal:active:before {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
 }
 
 .icons {
